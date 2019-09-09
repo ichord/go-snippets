@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${1:a} = append($1[:${2:i}], append(make([]${3:T}, ${4:j}), $1[$2:]...)...)
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>expS</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.go</scope>
+    <description>Expand slice</description>
+</snippet>

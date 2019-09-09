@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+for ${1:i} := len(${2:a})/2-1; $1 >= 0; $1-- {
+	opp := len($2)-1-$1
+	$2[$1], $2[opp] = $2[opp], $2[$1]
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>reverseS</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.go</scope>
+    <description>Reversing slice</description>
+</snippet>
